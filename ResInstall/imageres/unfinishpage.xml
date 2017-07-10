@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Windows>
+<!-- 完成 -->
+  <VerticalLayout   width="598" height="448" bkimage="ufinishbg.png">
+  	<!--标题栏-->
+		<HorizontalLayout height ="30" >
+			<Button name="EC" width="30" height="30" mouse="false" bkimage="ec.png"/>
+			<Control />
+			<!--系统按钮-->
+			<HorizontalLayout height="23" width="50">
+				<Button name="btn_min" width="25" height="23" normalimage="file='mini.png' source='0,0,25,23'" hotimage="file='mini.png' source='0,23,25,46'" pushedimage="file='mini.png' source='0,46,25,69'"/>
+				<Button name="btn_close" width="25" height="23" normalimage="file='close.png' source='0,0,25,23'" hotimage="file='close.png' source='0,23,25,46'" pushedimage="file='close.png' source='0,46,25,69'"/>
+			</HorizontalLayout>
+		</HorizontalLayout>
+    <Control />
+		<HorizontalLayout height="40">
+			<Control />
+			   <Button name="btn_unfinish_sure" text="好的，谢谢！" font="2"  width="240" textcolor="#FFFFFFFF" normalimage="file='btn_green.png' corner='5,5,5,5' source='0,0,80,36'" hotimage="file='btn_green.png' corner='5,5,5,5' source='0,36,80,72'" pushedimage="file='btn_green.png' corner='5,5,5,5' source='0,72,80,108'" />
+			<Control />
+		</HorizontalLayout>
+		<Control height="62" />
+ </VerticalLayout>
+</Windows>

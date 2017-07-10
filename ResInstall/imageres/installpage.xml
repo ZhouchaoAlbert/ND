@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Windows>
+	<VerticalLayout  name="intall" bkcolor="#FFFFFFFF" >
+	  <HorizontalLayout height="345">
+		   <GifAnim name="gif_Loading" bkimage="theme.gif" width="598"  autoplay="true"/>
+	  </HorizontalLayout>
+	  
+	  <Control />
+	  
+	  <HorizontalLayout  inset="15,0,0,0" height ="5">
+		 <Progress name="install_define_progress"  width="568"   height="5" bkcolor="#FFDEDEDE" disabledtextcolor="#FFA7A6AA" align="center" foreimage="progressbar.png" min="0" max="100" value="1" hor="true"/>
+	  </HorizontalLayout>
+	  
+	  <Control height="5" />
+	  
+	  <HorizontalLayout  height="15" inset="15,0,15,0" >
+	   <Label text="正在释放安装包..."  name="install_tip" textcolor="#FF565656"  width="100"  />
+		<Control />
+	   <Label text="1%" name="intall_percent" width="30"  textcolor="#FF565656" align="right" />
+	  </HorizontalLayout>
+
+	  <Control height="35" />
+
+	   <Button name="EC" float="true" pos="0,0,0,0" width="30" height="30" mouse="false" bkimage="ec.png"/>
+	   <Button name="btn_min"  float="true" pos="548,0,0,0"  height="23" width="25"  normalimage="file='mini.png' source='0,0,25,23'" hotimage="file='mini.png' source='0,23,25,46'" pushedimage="file='mini.png' source='0,46,25,69'"/>
+	   <Button name="btn_install_close" float="true" pos="573,0,0,0" width="25" height="23" bkimage="file='close.png' source='0,69,25,92'"  pushedimage="file='close.png' source='0,46,25,69'"/>
+		
+
+
+	</VerticalLayout >
+</Windows>

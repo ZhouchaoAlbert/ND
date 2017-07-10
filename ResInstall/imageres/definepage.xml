@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Windows>
+	<Default name="CheckBox" value="normalimage=&quot;file='cherkbox01.png' source='0,0,15,15' dest='0,0,15,15'&quot; hotimage=&quot;file='cherkbox01.png' source='0,15,15,30' dest='0,0,15,15'&quot; pushedimage=&quot;file='cherkbox01.png' source='0,30,15,45' dest='0,0,15,15'&quot; selectedimage=&quot;file='cherkbox01.png' source='0,45,15,60' dest='0,0,15,15'&quot;"/>
+    <VerticalLayout name="define" width="598" height="448"  bkimage="bg.png">
+		<!--标题栏-->
+		<HorizontalLayout height ="30" >
+						<Button name="EC" width="30" height="30" mouse="false" bkimage="ec.png"/>
+			<Control />
+			<!--系统按钮-->
+			<HorizontalLayout height="23" width="50">
+				<Button name="btn_min" width="25" height="23" normalimage="file='mini.png' source='0,0,25,23'" hotimage="file='mini.png' source='0,23,25,46'" pushedimage="file='mini.png' source='0,46,25,69'"/>
+				<Button name="btn_close" width="25" height="23" normalimage="file='close.png' source='0,0,25,23'" hotimage="file='close.png' source='0,23,25,46'" pushedimage="file='close.png' source='0,46,25,69'"/>
+			</HorizontalLayout>
+		</HorizontalLayout>
+		
+		<Control height="296" />
+		<!--安装路径-->
+		<HorizontalLayout height="25">
+			<Control with ="16" />
+		    <Label name="label_install_pos" text="安装位置：" font="0" textcolor="#FF383838" width="60"/>
+			<Edit  name="edt_define_path"  bordercolor="#FF949494" bordersize="1" width="435"  text=""  textcolor="#FF949494" />
+	  	    <Control />
+			<Button name="btn_define_browser" text="浏览" font="0" width="64" textcolor="#FF7E7E7E" normalimage="file='btn_white.png' corner='5,5,5,5' source='0,0,80,36'" hotimage="file='btn_white.png' corner='5,5,5,5' source='0,36,80,72'" pushedimage="file='btn_white.png' corner='5,5,5,5' source='0,72,80,108'" />
+			<Control with ="16" />
+		</HorizontalLayout>
+		<HorizontalLayout height="25" inset="80,10,200,0" >
+			<Label text="所需空间约: " textcolor="#FF949494" font="0" width="60" />
+			<Label name="label_need_space" textcolor="#FF949494" text="130M" width="50"/>
+			<Control with ="12" />
+			<Label text="可用空间: " textcolor="#FF949494" font="0" width="50"/> 
+			<Label name="label_use_space" textcolor="#FF949494" text="120M" width="50"/> 
+	        <Control  />
+		</HorizontalLayout>
+	
+		<Control />
+		<HorizontalLayout height="30" >
+			<HorizontalLayout  inset="16,10,0,0" width="260" >
+				<CheckBox  name="chk_define_shortcut" text="创建桌面快捷方式" font="0" width="120" selected="true" textcolor="#FF949494" align="left" valign="vcenter" textpadding="15,0,0,0" height="15"/> 
+				<Control   width="15"/>
+				<CheckBox  name="chk_define_autostart" text="开机自动启动" font="0" width="120" selected="true" textcolor="#FF949494" align="left" valign="vcenter" textpadding="15,0,0,0" height="15"/> 	
+			</HorizontalLayout>	 
+			<Control />
+			<Button name="btn_define_install" text="立即安装" height="30" font="0" width="100" textcolor="#FFEBF9F4" normalimage="file='btn_green.png' corner='5,5,5,5' source='0,0,80,36'" hotimage="file='btn_green.png' corner='5,5,5,5' source='0,36,80,72'" pushedimage="file='btn_green.png' corner='5,5,5,5' source='0,72,80,108'" />
+			<Control width="10" />
+			<Button name="btn_define_return" text="返回" width="70" font="0" textcolor="#00000000" normalimage="file='btn_white.png' corner='5,5,5,5' source='0,0,80,36'" hotimage="file='btn_white.png' corner='5,5,5,5' source='0,36,80,72'" pushedimage="file='btn_white.png' corner='5,5,5,5' source='0,72,80,108'" />
+			<Control width="16" />
+		</HorizontalLayout>	 
+		<Control height="16" />
+	</VerticalLayout >
+</Windows>

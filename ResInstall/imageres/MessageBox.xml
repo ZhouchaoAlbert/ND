@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window size="350,200" caption="0,0,0,38" roundcorner="2,2,2,2" showshadow="true" shadowimage="shadow.png" shadowcorner="7,7,7,7">
+	<Font name="微软雅黑" size="12" bold="false" default="true" />
+	<Font name="微软雅黑" size="14" bold="false"/>
+	<Font name="微软雅黑" size="18" bold="false"/>
+	<VerticalLayout bkimage="quit.png">
+		<!--标题栏-->
+		<HorizontalLayout bkcolor="#FFF5F5F5" height="39">
+			<Control width="14"/>
+			<Label name="label_box_title" font="1" autocalcwidth="true" textcolor="#FF4C4C4C"/>
+			<Control />
+			<Button name="btn_box_close" width="25" height="23" normalimage="file='close.png' source='0,0,25,23'" hotimage="file='close.png' source='0,23,25,46'" pushedimage="file='close.png' source='0,46,25,69'"/>
+		</HorizontalLayout>
+			<Control height="40" />
+			<HorizontalLayout height = "46">
+				<Control />
+				<VerticalLayout width = "47">
+					<Label width = "47" height = "46" bkimage="file='warn.png'"/>
+				</VerticalLayout>
+		
+					<Text name="text_box_tip" text="您确定要退出EC安装程序吗？" height = "46" textcolor="#FF787878" autocalcwidth="true"  align="left" font="1" mouse="false" textpadding="5,13,0,0"/>
+				<Control />
+			</HorizontalLayout>
+			<Control />
+			<HorizontalLayout height="36">
+				<Control />
+				<Button name="btn_box_yes" text="确定" width="80" textcolor="#FFFFFFFF" normalimage="file='btn_green.png' corner='5,5,5,5' source='0,0,80,36'" hotimage="file='btn_green.png' corner='5,5,5,5' source='0,36,80,72'" pushedimage="file='btn_green.png' corner='5,5,5,5' source='0,72,80,108'" />
+				<Control width="12"/>
+				<Button name="btn_box_no"  text="取消"  width="80" textcolor="#FF6C6C6C"  normalimage="file='btn_white.png' corner='5,5,5,5' source='0,0,80,36'" hotimage="file='btn_white.png' corner='5,5,5,5' source='0,36,80,72'" pushedimage="file='btn_white.png' corner='5,5,5,5' source='0,72,80,108'" />
+				<Control />
+			</HorizontalLayout>
+			<Control height="10" />
+	</VerticalLayout>
+</Window>
+

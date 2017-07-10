@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+
+<Windows>
+	<Default name="CheckBox" value="normalimage=&quot;file='cherkbox01.png' source='0,0,15,15' dest='0,0,15,15'&quot; hotimage=&quot;file='cherkbox01.png' source='0,15,15,30' dest='0,0,15,15'&quot; pushedimage=&quot;file='cherkbox01.png' source='0,30,15,45' dest='0,0,15,15'&quot; selectedimage=&quot;file='cherkbox01.png' source='0,45,15,60' dest='0,0,15,15'&quot;"/>
+    <VerticalLayout name="main" width="598" height="448"  bkimage="bg.png">
+		<!--标题栏-->
+		<HorizontalLayout height ="30" >
+			<!--Label text="EC" textpadding="5,0,0,10" textcolor="#FFFFFFFF" font="1" autowidth="true"/-->
+			<Button name="EC" width="30" height="30" mouse="false" bkimage="ec.png"/>
+			<Control />
+			<!--系统按钮-->
+			<HorizontalLayout height="23" width="50">
+				<Button name="btn_min" width="25" height="23" normalimage="file='mini.png' source='0,0,25,23'" hotimage="file='mini.png' source='0,23,25,46'" pushedimage="file='mini.png' source='0,46,25,69'"/>
+				<Button name="btn_close" width="25" height="23" normalimage="file='close.png' source='0,0,25,23'" hotimage="file='close.png' source='0,23,25,46'" pushedimage="file='close.png' source='0,46,25,69'"/>
+			</HorizontalLayout>
+		</HorizontalLayout>
+		<!--立即安装-->
+		<Control />
+		<HorizontalLayout height="40">
+			<Control />
+			   <Button name="btn_main_install" text="立即安装" font="2"  width="240" textcolor="#FFFFFFFF" normalimage="file='btn_green.png' corner='5,5,5,5' source='0,0,80,36'" hotimage="file='btn_green.png' corner='5,5,5,5' source='0,36,80,72'" pushedimage="file='btn_green.png' corner='5,5,5,5' source='0,72,80,108'" />
+			<Control />
+		</HorizontalLayout>
+		<Control height= "26"/>
+		<HorizontalLayout height="20" >
+			<Control width="16" />
+				<CheckBox  name="chk_main_agree" text="同意" font="0" width="45" selected="true" textcolor="#FF7D7D7D" align="left" valign="vcenter" textpadding="15,0,0,0" height="15"/> 
+				<Button    name="btn_main_agreement" width="140"  text="EC用户许可协议" font="0" textpadding="0,0,0,0" textcolor="#FF3CBF9C" align="left" />
+			<Control />
+				<Button name="btn_main_define"  width="80" normalimage="file='define.png' corner='5,5,5,5' source='0,0,80,20'" hotimage="file='define.png' corner='5,5,5,5' source='0,20,80,40' " pushedimage="file='define.png' corner='5,5,5,5' source='0,40,80,60' " />
+			<Control width="16" />
+		</HorizontalLayout>	 
+		<Control height="16" />
+	</VerticalLayout >
+</Windows>
